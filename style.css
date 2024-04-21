@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.homepage {
+    width: 100%;
+}
+
+.header {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 25px;
+    padding-left: 12px;
+}
+
+.header h1 span {
+    color: orangered;
+}
+
+.header ul li {
+    display: inline-block;
+    margin: 0 35px;
+}
+
+.header ul li a {
+    color: black;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .6s all ease-in-out;
+}
+
+.header ul li a:hover {
+    color: orangered;
+}
+
+.home-content {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 60px;
+}
+
+.home-content h1 span {
+    color: orangered;
+}
+
+.home-content p {
+    width: 60%;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.services {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service-header h1 {
+    font-size: 40px;
+}
+
+.service-header p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.service-content {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin-top: 30px;
+}
+
+.service-content .card {
+    width: 31%;
+    border-radius: 22px;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    transition: .7s all ease-in-out;
+}
+
+.service-content .card:hover {
+    background: #023339;
+    color: white;
+}
+
+.service-content .card h1 {
+    margin-top: 30px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.service-content .card p {
+    margin: 10px auto;
+    width: 70%;
+}
