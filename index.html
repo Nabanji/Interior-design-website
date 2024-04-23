@@ -7,28 +7,32 @@
     <title>DesignMe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-    <section class="homepage">
+    <section class="homepage" id="home">
         <div class="header">
             <h1>Design<span>Me</span></h1>
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">services</a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#projects">projects</a></li>
                 <li><a href="#">contact</a></li>
             </ul>
         </div>
         <div class="home-content">
-            <h1>Precise concept design for <br><span>stylish living</span></h1>
-            <p>Elevate your space with our bespoke interior designs. From timeless elegance to modern chic, we craft
+            <h1 class="animate__animated animate__fadeInLeft">Precise concept design for <br><span>stylish living</span>
+            </h1>
+            <p class="animate__animated animate__fadeInBottomLeft">Elevate your space with our bespoke interior designs.
+                From timeless elegance to modern chic, we craft
                 personalized solutions to reflect your style. Let our team transform your vision into stunning reality.
             </p>
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-content">
             <h1>who are we</h1>
             <header>we propose and <br>discuss design rules</header>
@@ -47,7 +51,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="service-header">
             <h1>What we offer to our clients</h1>
             <p>Let our team transform your vision into stunning reality, creating spaces that inspire and enchant.</p>
@@ -71,25 +75,65 @@
                 <p>Unlock the power of imagination with our conceptual expertise. We breathe life into ideas,
                     envisioning possibilities that transcend the ordinary.</p>
             </div>
+        </div>
 
+        <div class="numbers">
+            <div>
+                <h1>85</h1>
+                <header>projects <br>completed</header>
+            </div>
+
+            <div>
+                <h1>97</h1>
+                <header>happy <br>clients</header>
+            </div>
+
+            <div>
+                <h1>37</h1>
+                <header>awards <br>received</header>
+            </div>
         </div>
 
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="project-header">
             <h1>our works</h1>
             <header>latest projects</header>
         </div>
 
         <div class="project-content">
-            <button><i class="fa-solid fa-arrow-left"></i></button>
-            <img src="images/image1.jpeg" alt="">
-            <img src="images/image2.jpeg" alt="">
-            <img src="images/image4.jpeg" alt="">
-            <img src="images/image5.webp" alt="">
-            <img src="images/image6.webp" alt="">
-            <button><i class="fa-solid fa-arrow-right"></i></button>
+            <div class="image-container">
+                <img src="images/image1.jpeg" alt="">
+                <div class="image-overlay">
+                    <p>Dining Area</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="images/image2.jpeg" alt="">
+                <div class="image-overlay">
+                    <p>Table setup</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="images/image4.jpeg" alt="">
+                <div class="image-overlay">
+                    <p>Dining area</p>
+
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="images/image5.webp" alt="">
+                <div class="image-overlay">
+                    <p>Couch setup</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="images/image6.webp" alt="">
+                <div class="image-overlay">
+                    <p>Kitchen</p>
+                </div>
+            </div>
         </div>
     </section>
 
