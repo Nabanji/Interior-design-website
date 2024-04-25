@@ -292,3 +292,48 @@ html {
 .image-container:hover .image-overlay {
     opacity: 1;
 }
+
+.testimonials {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    background: #02333915;
+}
+
+.testimonials-header h1 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: orange;
+}
+
+.testimonials-header header {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.testimonials-content {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid lightgray;
+}
+
+.testimonials-content p {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.testimonials-content h3 {
+    font-size: 30px;
+    font-style: italic;
+}
