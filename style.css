@@ -3,10 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .homepage {
@@ -44,6 +50,16 @@ html {
 
 .header ul li a:hover {
     color: orangered;
+}
+
+.header i {
+    display: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.header i:hover {
+    cursor: pointer;
 }
 
 .home-content {
@@ -350,59 +366,199 @@ html {
     color: orangered;
 }
 
-.our-team {
-    width: 90%;
-    margin: 20px auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-}
 
-.our-team h1 {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin: 5px 40px;
-    margin-top: 60px;
-    color: orangered;
-}
+/* MEDIA QUERIES */
+@media (max-width: 599px) {
+    .homepage {
+        height: 100vh;
+    }
 
-.our-team h2 {
-    font-size: 40px;
-    margin: 0px 40px;
-    text-transform: uppercase;
-}
+    .header {
+        padding-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.person-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
-}
+    .header h1 {
+        font-size: 20px;
+        padding-left: 5px;
+    }
 
-.person-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 35%;
-    height: 600px;
-    cursor: pointer;
-}
+    .header i {
+        display: block;
+        margin-right: 6px;
+    }
 
-.person-card img {
-    height: 92%;
-    width: 90%;
-}
+    .header ul {
+        display: none;
+    }
 
-.person-card div h3 {
-    text-transform: capitalize;
-    font-size: 20px;
-    font-weight: 400;
-}
+    .home-content {
+        height: 95dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
-.person-card div p {
-    color: orangered;
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content p {
+        /*width: 60%;*/
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    /* SECOND WEBPAGE */
+    .about {
+        width: 100%;
+        height: fit-content;
+        /*display: flex;*/
+        flex-direction: column;
+    }
+
+    .about div {
+        width: 100%;
+        margin-top: 20px;
+        /*border: 1px solid black;*/
+    }
+
+    .about .about-content {
+        height: 50%;
+        padding: 0px 30px;
+    }
+
+    .about-content h1 {
+        font-size: 15px;
+    }
+
+    .about-content header {
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+        margin: 8px 0px;
+    }
+
+    .about-content button {
+        width: 130px;
+        height: 30px;
+    }
+
+    .about-image img {
+        width: 90%;
+        height: 500px;
+    }
+
+    /* THIRD WEBPAGE */
+
+    .services {
+        height: fit-content;
+        margin-top: 20px;
+    }
+
+    .service-header h1 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .service-header p {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 18px;
+    }
+
+
+    .service-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .service-content .card {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .service-content .card p {
+        margin: 10px auto;
+        width: 70%;
+    }
+
+    .numbers {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .numbers div {
+        width: 100%;
+        display: flex;
+    }
+
+    .numbers div h1 {
+        width: 40%;
+        height: 20%;
+        text-align: right;
+        color: orange;
+        font-size: 70px;
+    }
+
+    .numbers div header {
+        width: 60%;
+        height: 20%;
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+
+    /* FOURTH WEBPAGE */
+    .projects {
+        display: none;
+    }
+
+    /* FIFTH WEBPAGE */
+    .testimonials {
+        width: 100%;
+        height: fit-content;
+        gap: 0px;
+        margin-top: 20px;
+    }
+
+    .testimonials-header {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 6px;
+    }
+
+    .testimonials-header h1 {
+        font-size: 18px;
+    }
+
+    .testimonials-header header {
+        font-size: 20px;
+    }
+
+    .testimonials-content {
+        width: 100%;
+        border: none;
+        gap: 0px;
+    }
+
+    .testimonials-content p {
+        font-size: 18px;
+    }
+
+    .testimonials-content h3 {
+        font-size: 26px;
+        margin-top: 6px;
+    }
+
 }
