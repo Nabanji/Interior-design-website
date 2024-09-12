@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: black;
 }
 
 html {
@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
 
 .homepage {
     width: 100%;
-    background: #02333915;
+    background-color: rgba(173, 216, 230, 0.319);
 }
 
 .header {
@@ -195,6 +195,10 @@ body::-webkit-scrollbar {
 
 .service-content .card:hover {
     background: #023339;
+}
+
+.service-content .card:hover h1,
+.service-content .card:hover p {
     color: white;
 }
 
@@ -318,57 +322,13 @@ body::-webkit-scrollbar {
     opacity: 1;
 }
 
-.testimonials {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 40px;
-    background: #02333915;
-}
-
-.testimonials-header h1 {
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: orange;
-}
-
-.testimonials-header header {
-    text-transform: uppercase;
-    font-size: 40px;
-}
-
-.testimonials-content {
-    width: 80%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    border: 1px solid lightgray;
-    border-radius: 12px;
-}
-
-.testimonials-content p {
-    font-size: 22px;
-    font-style: italic;
-}
-
-.testimonials-content h3 {
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 400;
-    color: orangered;
-}
-
 
 /* MEDIA QUERIES */
 @media (max-width: 599px) {
+    body {
+        background-color: white;
+    }
+
     .homepage {
         height: 100vh;
     }
@@ -417,7 +377,7 @@ body::-webkit-scrollbar {
     .about {
         width: 100%;
         height: fit-content;
-        /*display: flex;*/
+        background-color: white;
         flex-direction: column;
     }
 
@@ -486,6 +446,7 @@ body::-webkit-scrollbar {
     .service-content .card {
         width: 90%;
         margin: 0px auto;
+        border: 1px solid black;
     }
 
     .service-content .card p {
@@ -509,56 +470,19 @@ body::-webkit-scrollbar {
         height: 20%;
         text-align: right;
         color: orange;
-        font-size: 70px;
+        font-size: 50px;
     }
 
     .numbers div header {
         width: 60%;
         height: 20%;
-        font-size: 26px;
+        font-size: 20px;
         text-transform: uppercase;
     }
 
     /* FOURTH WEBPAGE */
     .projects {
         display: none;
-    }
-
-    /* FIFTH WEBPAGE */
-    .testimonials {
-        width: 100%;
-        height: fit-content;
-        gap: 0px;
-        margin-top: 20px;
-    }
-
-    .testimonials-header {
-        margin: 0;
-        padding: 0;
-        margin-bottom: 6px;
-    }
-
-    .testimonials-header h1 {
-        font-size: 18px;
-    }
-
-    .testimonials-header header {
-        font-size: 20px;
-    }
-
-    .testimonials-content {
-        width: 100%;
-        border: none;
-        gap: 0px;
-    }
-
-    .testimonials-content p {
-        font-size: 18px;
-    }
-
-    .testimonials-content h3 {
-        font-size: 26px;
-        margin-top: 6px;
     }
 
 }
