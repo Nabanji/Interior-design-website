@@ -16,8 +16,8 @@ body::-webkit-scrollbar {
 }
 
 .homepage {
+    height: 100vh;
     width: 100%;
-    background-color: lightblue;
 }
 
 .header {
@@ -156,7 +156,7 @@ body::-webkit-scrollbar {
 }
 
 .about-image img {
-    width: 80%;
+    width: 68%;
     height: 600px;
 }
 
@@ -354,7 +354,7 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     margin-top: 20px;
 }
 
@@ -376,13 +376,14 @@ body::-webkit-scrollbar {
 
 .our-team .team-desc .person-container:hover {
     background-color: #023339a4;
+    transform: scale(1.1);
     border: none;
 }
 
 
 .our-team .team-desc .person-container img {
-    width: 55%; 
-    height: 40%;
+    width: 40%; 
+    height: 32%;
     border-radius: 100%;
     border: 1px solid lightgray;
 }
@@ -412,6 +413,85 @@ body::-webkit-scrollbar {
     letter-spacing: 1.3px;
 }
 
+.testimonial {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.testimonial-heading h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: orangered;
+}
+
+.testimonial-heading p {
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: white;
+    width: 22%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    transition: .6s all ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.1);
+}
+
+.person {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    padding-left: 30px;
+}
+
+.person img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.person h1 {
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+.person p {
+    text-transform: capitalize;
+    font-size: 22px;
+    color: orangered;
+}
+
+.testimonial-card .person-desc {
+    margin-top: 20px;
+    padding-left: 30px;
+}
 
 
 

@@ -35,30 +35,3 @@ document.addEventListener("DOMContentLoaded", function () {
     updateImageVisibility();
 });
 
-const testimonials = [
-    {
-        client: "Franklin Saint",
-        occupation: "Real Estate Agent",
-        words: "Working with DesignMe Interior Design was an absolute pleasure! From the initial consultation to the final reveal, their team showed unparalleled professionalism and creativity. They truly listened to our ideas and preferences, transforming our space into a beautiful and functional environment that exceeded our expectations. We couldn't be happier with the results and would highly recommend DesignMe Interior Design to anyone looking to elevate their home or office décor."
-    },
-    {
-        client: "Beth Skate",
-        occupation: "Architect",
-        words: "DesignMe Interior Design brought our vision to life in ways we never imagined possible. Their attention to detail and eye for design turned our dull and uninspired rooms into vibrant, inviting spaces that reflect our personality perfectly. The team's expertise in color schemes, furniture selection, and spatial arrangement made the entire process seamless and enjoyable. We are thrilled with the outcome and can't thank XYZ Interior Design enough for their exceptional work!"
-    },
-    {
-        client: "Bill Will",
-        occupation: "Engineer",
-        words: "Choosing DesignMe Interior Design was the best decision we made for our home renovation project. From the moment we met with their team, we knew we were in good hands. Their creative approach, coupled with their knowledge of current design trends, transformed our outdated living spaces into modern, stylish rooms that we now love spending time in. The attention to detail and personalized service they provided exceeded our expectations. Wt of our project."
-    }
-];
-
-
-const clientName = document.querySelector(".client");
-const clientTestimony = document.querySelector(".testimony");
-const clientOccupation = document.querySelector(".occupation");
-
-let index = 0;
-clientName.textContent = testimonials[index].client;
-clientTestimony.textContent = testimonials[index].words;
-clientOccupation.textContent = testimonials[index].occupation;
