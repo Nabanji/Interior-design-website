@@ -614,6 +614,12 @@ body::-webkit-scrollbar {
     display: flex;
     gap: 10px;
     margin: 10px 0px;
+    transition: .4s all ease-in-out;
+    cursor: pointer;
+}
+
+.news-desc:hover {
+    opacity: 0.5;
 }
 
 .news-desc img {
@@ -658,6 +664,12 @@ body::-webkit-scrollbar {
     border: 1px solid lightgray;
     cursor: pointer;
     border-radius: 22px;
+    transition: .6s all ease-in-out;
+}
+
+.social form button:hover {
+    background-color: orangered;
+    color: white;
 }
 
 #social-header {
@@ -673,6 +685,11 @@ body::-webkit-scrollbar {
 .social-links i {
     font-size: 18px;
     cursor: pointer;
+    transition: .6s all ease-in-out;
+}
+
+.social-links i:hover {
+    color: orangered;
 }
 
 
@@ -833,8 +850,13 @@ body::-webkit-scrollbar {
         text-transform: uppercase;
     }
 
+    .projects {
+        display: none;
+    }
+
     .our-team {
-        margin-top: 20px;
+        margin-top: 50px;
+        height: fit-content;
     }
 
     .our-team .team-intro h1{
@@ -868,6 +890,10 @@ body::-webkit-scrollbar {
         height: 400px;
     }
 
+    .our-team .team-desc .person-container:hover {
+        transform: scale(0.9);
+    }
+
     .our-team .team-desc .person-container img {
         width: 55%; 
         height: 35%;
@@ -883,6 +909,116 @@ body::-webkit-scrollbar {
     
     .our-team .team-desc .person-container p {
         font-size: 14px;
+    }
+
+    .testimonial {
+        margin-top: 50px;
+        height: fit-content;
+    }
+
+    .testimonial-heading h1{
+        font-size: 30px;
+    }
+
+    .testimonial-heading p {
+        font-size: 22px;
+        margin: 12px 0px;
+    }
+
+    .testimonials {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial-card {
+        width: 80%;
+        height: 300px;
+        margin: 4px 0px;
+    }
+
+    .testimonial-card:hover {
+        transform: scale(1.03);
+    }
+
+    .discuss-interior {
+        width: 100%;
+    }
+
+    .discuss-interior h1{
+        font-size: 42px;
+    }
+
+    .discuss-interior p {
+        font-size: 22px;
+        padding: 0px 6px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-top: 18px;
+    }
+
+    .buttons button {
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-div {
+        width: 80%;
+    }
+
+    .footer-div h1 {
+        font-size: 25px;
+    }
+
+    .navigation {
+        padding-left: 0px;
+    }
+
+    .navigation ul li {
+        font-size: 18px;
+    }
+
+    .news-desc img{
+        width: 400px;
+    } 
+
+    .news-desc h2 {
+        font-size: 16px;
+    }
+
+    .news-desc p {
+        font-size: 14px;
+        width: fit-content;
+        margin-top: 6px;
+    }
+
+    .social form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social form input {
+        width: 90%;
+    }
+
+    .social form button {
+        margin-top: 8px;
+    }
+
+    .social-links {
+        margin-bottom: 1cqi;
     }
 
 }
