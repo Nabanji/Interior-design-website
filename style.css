@@ -30,6 +30,7 @@ body::-webkit-scrollbar {
 .header h1 {
     font-size: 25px;
     padding-left: 12px;
+    align-self: flex-start;
 }
 
 .header h1 span {
@@ -155,10 +156,20 @@ body::-webkit-scrollbar {
     overflow: hidden;
 }
 
-.about-image img {
+/* .about-image img {
     width: 68%;
     height: 600px;
+} */
+
+.about-image img {
+    width: 70%; /* Makes the image take full width of its container */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 800px; /* Optional: limits the image width to avoid being too large on wide screens */
+    object-fit: cover; /* Ensures the image covers the space while maintaining aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
 }
+
+
 
 .services {
     width: 100%;

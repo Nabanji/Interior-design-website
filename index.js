@@ -1,4 +1,33 @@
+let sidebar = document.querySelector('.bars');
+let navLinks = document.querySelector('.nav-links');
+let navLink = document.querySelectorAll('.nav-link');
+sidebar.addEventListener('click', (e) => {
+    e.preventDefault();
+    // navLink.style.margin = '4px 0px';
+    sidebar.classList.toggle('fa-times');
+    if (sidebar.classList.contains('fa-times')) {
+        navLinks.style.display = 'block';
+        // navLinks.style.transition = '.6s all ease-in-out';
+        // navLinks.style.border = '1px solid black';
+        navLink.forEach((link) => {
+            // navLinks.style.display = 'block';
+            // link.style.margin = '4px 0px';
+            // link.style.border = '1px solid black'
+            link.style.width = '90px'
+            link.style.marginTop = '4px';
+            link.style.fontSize = '22px';
+            link.style.transition = '.6s all ease-in-out';
+        });
+    } else {
+        navLinks.style.display = 'none';
+    }
+    sidebar.style.alignSelf = 'flex-start';
+    // navLinks.style.display = 'block';
+})
+
 document.addEventListener("DOMContentLoaded", function () {
+    sidebar.classList.add('fa-bars');
+
     const projectContent = document.querySelector(".project-content");
     const prevButton = projectContent.querySelector(".prev");
     const nextButton = projectContent.querySelector(".next");
@@ -35,3 +64,19 @@ document.addEventListener("DOMContentLoaded", function () {
     updateImageVisibility();
 });
 
+
+
+// document.addEventListener('DOMContentLoaded', (e) => {
+//     e.preventDefault();
+//     sidebar.addEventListener('click', (e) => {
+//         e.preventDefault();
+//         const navLink = document.querySelectorAll('.nav-link');
+//         navLink.forEach((link) => {
+//             link.style.margin = '4px 0px';
+//         });
+//         sidebar.classList.toggle('fa-times');
+//         sidebar.style.alignSelf = 'flex-start';
+//         navLinks.style.display = 'block';
+//     })
+    
+// })
