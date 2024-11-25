@@ -17,20 +17,24 @@ body::-webkit-scrollbar {
 
 .homepage {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 .header {
-    padding-top: 5px;
+    width: 100%;
+    /* padding-top: 5px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* border: 1px solid black; */
 }
 
 .header h1 {
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 200;
     padding-left: 12px;
     align-self: flex-start;
+    
 }
 
 .header h1 span {
@@ -39,7 +43,7 @@ body::-webkit-scrollbar {
 
 .header ul li {
     display: inline-block;
-    margin: 0 35px;
+    padding: 2px 20px;
 }
 
 .header ul li a {
@@ -53,10 +57,14 @@ body::-webkit-scrollbar {
     color: orangered;
 }
 
-.header i {
-    display: none;
+.header button {
+    border: none;
+    outline: none;
     font-size: 20px;
-    margin-right: 10px;
+    /* margin-top: -15px; */
+    /* margin-right: 14px; */
+    background: transparent;
+    /* border: 1px solid black; */
 }
 
 .header i:hover {
@@ -83,9 +91,25 @@ body::-webkit-scrollbar {
 
 .home-content p {
     width: 60%;
-    margin-top: 10px;
     font-size: 22px;
 }
+
+.home-content .more {
+    height: 40px;
+    width: 160px;
+    color: white;
+    background: transparent;
+    background-color: #023339;
+    border: none;
+    transition: .6s all ease;
+}
+
+.home-content .more:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
 
 .about {
     width: 100%;
@@ -110,6 +134,7 @@ body::-webkit-scrollbar {
 .about-content h1 {
     font-size: 20px;
     font-weight: 600;
+    color: orangered;
     text-transform: uppercase;
 }
 
@@ -166,7 +191,7 @@ body::-webkit-scrollbar {
     height: auto; /* Maintains aspect ratio */
     max-width: 800px; /* Optional: limits the image width to avoid being too large on wide screens */
     object-fit: cover; /* Ensures the image covers the space while maintaining aspect ratio */
-    border-radius: 10px; /* Optional: adds rounded corners */
+    /* border-radius: 10px; Optional: adds rounded corners */
 }
 
 
@@ -215,6 +240,7 @@ body::-webkit-scrollbar {
 }
 
 .service-content .card h1 {
+    font-size: 2rem;
     margin-top: 30px;
     text-transform: capitalize;
     font-weight: 600;
@@ -613,6 +639,7 @@ body::-webkit-scrollbar {
 
 .footer-div ul li a {
     text-decoration: none;
+    color: black;
     transition: .6s all ease-in-out;
 }
 
@@ -704,161 +731,104 @@ body::-webkit-scrollbar {
 }
 
 
-/* MEDIA QUERIES */
-@media (max-width: 599px) {
-    body {
-        background-color: white;
-    }
-
-    .homepage {
-        height: 100vh;
-    }
-
-    .header {
-        padding-top: 5px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header h1 {
-        font-size: 20px;
-        padding-left: 5px;
-    }
-
-    .header i {
-        display: block;
-        margin-right: 6px;
-    }
-
-    .header ul {
+@media screen and (max-width: 799px) {
+    .nav-links {
         display: none;
     }
 
-    .home-content {
-        height: 95dvh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
     .home-content h1 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .home-content p {
-        /*width: 60%;*/
-        margin-top: 10px;
-        font-size: 18px;
+        font-size: 1rem;
     }
 
-    /* SECOND WEBPAGE */
     .about {
-        width: 100%;
-        height: fit-content;
-        background-color: white;
         flex-direction: column;
+        height: fit-content;
     }
 
     .about div {
         width: 100%;
-        margin-top: 20px;
-        /*border: 1px solid black;*/
-    }
-
-    .about .about-content {
-        height: 50%;
-        padding: 0px 30px;
     }
 
     .about-content h1 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .about-content header {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .about-content p {
-        font-size: 16px;
-        margin: 8px 0px;
+        font-size: 14px;
     }
 
     .about-content button {
         width: 130px;
-        height: 30px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .about-image {
+        margin: 4px 0px;
+        width: 100%;
     }
 
     .about-image img {
-        width: 90%;
-        height: 500px;
+        width: 95%;
     }
-
-    /* THIRD WEBPAGE */
 
     .services {
         height: fit-content;
-        margin-top: 20px;
-    }
-
-    .service-header h1 {
-        font-size: 30px;
         margin-top: 10px;
     }
 
-    .service-header p {
-        width: 90%;
-        margin: 10px auto;
-        font-size: 18px;
+    .service-header h1 {
+        font-size: 24px;
+        color: orangered;
     }
 
+    .service-header p {
+        margin: 0;
+        font-size: 16px;
+        width: 80%;
+        margin: auto;
+    }
 
     .service-content {
-        display: flex;
         flex-direction: column;
         gap: 10px;
-        justify-content: space-around;
-        width: 100%;
-        margin-top: 30px;
     }
 
     .service-content .card {
-        width: 90%;
-        margin: 0px auto;
-        border: 1px solid lightgray;
+        width: 100%;
+    }
+
+    .service-content .card h1 {
+        font-size: 22px;
     }
 
     .service-content .card p {
-        margin: 10px auto;
-        width: 70%;
+        font-size: 16px;
     }
 
     .numbers {
-        width: 100%;
-        display: flex;
         flex-direction: column;
     }
 
     .numbers div {
-        width: 100%;
-        display: flex;
+        align-items: left;
     }
 
     .numbers div h1 {
-        width: 40%;
-        height: 20%;
-        text-align: right;
-        color: orange;
-        font-size: 50px;
+        align-self: left;
+        font-size: 32px;
     }
 
     .numbers div header {
-        width: 60%;
-        height: 20%;
         font-size: 20px;
-        text-transform: uppercase;
     }
 
     .projects {
@@ -866,170 +836,19 @@ body::-webkit-scrollbar {
     }
 
     .our-team {
-        margin-top: 50px;
-        height: fit-content;
-    }
-
-    .our-team .team-intro h1{
-        margin: 0;
-        padding: 0;
-        font-size: 16px;
-    }
-
-    .our-team .team-intro h2 {
-        margin: 0;
-        padding: 0;
-        font-size: 24px;
-    }
-
-    .our-team .team-intro p {
-        font-size: 14px;
-    }
-
-    .our-team .team-desc {
-        padding-top: 10px;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 4px;
-    }
-
-    .our-team .team-desc .person-container {
-        width: 80%;
-        height: 400px;
-    }
-
-    .our-team .team-desc .person-container:hover {
-        transform: scale(0.9);
-    }
-
-    .our-team .team-desc .person-container img {
-        width: 55%; 
-        height: 35%;
-    }
-    
-    .our-team .team-desc .person-container h2 {
-        font-size: 16px;
-    }
-    
-    .our-team .team-desc .person-container h1 {
-        font-size: 16px;
-    }
-    
-    .our-team .team-desc .person-container p {
-        font-size: 14px;
-    }
-
-    .testimonial {
-        margin-top: 50px;
-        height: fit-content;
-    }
-
-    .testimonial-heading h1{
-        font-size: 30px;
-    }
-
-    .testimonial-heading p {
-        font-size: 22px;
-        margin: 12px 0px;
+        display: none;
     }
 
     .testimonials {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
 
-    .testimonial-card {
-        width: 80%;
-        height: 300px;
-        margin: 4px 0px;
-    }
-
-    .testimonial-card:hover {
-        transform: scale(1.03);
-    }
-
-    .discuss-interior {
-        width: 100%;
-    }
-
-    .discuss-interior h1{
-        font-size: 42px;
-    }
-
-    .discuss-interior p {
-        font-size: 22px;
-        padding: 0px 6px;
-    }
-
-    .buttons {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        margin-top: 18px;
-    }
-
-    .buttons button {
-        margin: 0;
-        padding: 0;
+    .web-footer {
+        display: none;
     }
 
     .footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footer-div {
-        width: 80%;
-    }
-
-    .footer-div h1 {
-        font-size: 25px;
-    }
-
-    .navigation {
-        padding-left: 0px;
-    }
-
-    .navigation ul li {
-        font-size: 18px;
-    }
-
-    .news-desc img{
-        width: 400px;
-    } 
-
-    .news-desc h2 {
-        font-size: 16px;
-    }
-
-    .news-desc p {
-        font-size: 14px;
-        width: fit-content;
-        margin-top: 6px;
-    }
-
-    .social form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .social form input {
-        width: 90%;
-    }
-
-    .social form button {
-        margin-top: 8px;
-    }
-
-    .social-links {
-        margin-bottom: 1cqi;
+        display: none;
     }
 
 }
