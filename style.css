@@ -58,6 +58,7 @@ body::-webkit-scrollbar {
 }
 
 .header button {
+    display: none;
     border: none;
     outline: none;
     font-size: 20px;
@@ -307,13 +308,13 @@ body::-webkit-scrollbar {
 }
 
 .project-content {
-    width: 1200px;
-    overflow: hidden;
+    width: 100%;
+    height: fit-content;
     display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
-    /* Hide horizontal overflow */
 }
 
 .project-content button {
@@ -326,9 +327,8 @@ body::-webkit-scrollbar {
 }
 
 .image-container {
-    width: 600px;
-    position: relative;
-    margin-right: 10px;
+    width: 15%;
+    /* margin-right: 10px; */
     cursor: pointer;
     transition: .6s all ease;
 }
@@ -744,6 +744,13 @@ body::-webkit-scrollbar {
         font-size: 1rem;
     }
 
+    .header button {
+        display: flex;
+        border: none;
+        outline: none;
+        font-size: 20px;
+    }
+
     .about {
         flex-direction: column;
         height: fit-content;
@@ -769,6 +776,7 @@ body::-webkit-scrollbar {
         width: 130px;
         height: 35px;
         font-size: 14px;
+        margin-bottom: 20px;
     }
 
     .about-image {
@@ -832,15 +840,63 @@ body::-webkit-scrollbar {
     }
 
     .projects {
-        display: none;
+        display: flex;
+        height: fit-content;
+    }
+
+    .project-content .image-container {
+        width: 100%;
     }
 
     .our-team {
-        display: none;
+        height: fit-content;
+        display: flex;
+    }
+
+    .our-team .team-intro h1 {
+        margin-top: -10px;
+    }
+
+    .our-team .team-intro p {
+        width: 80%;
+        margin: -10px auto;
+        font-size: 16px;
+    }
+
+    .our-team .team-desc {
+        flex-direction: column;
+    }
+
+    .our-team .team-desc .person-container {
+        width: 80%;
+        height: auto;
+    }
+
+    .our-team .team-desc .person-container img {
+        margin-top: 6px;
+        height: 120px;
+    }
+
+    .testimonial {
+        height: fit-content;
+        margin-top: 30px;
+    }
+
+    .testimonial .testimonial-heading h1{
+        font-size: 18px;
+    }
+
+    .testimonial .testimonial-heading p {
+        margin-top: -10px;
+        font-size: 16px;
     }
 
     .testimonials {
-        display: none;
+        flex-direction: column;
+    }
+
+    .testimonials .testimonial-card {
+        width: 80%;
     }
 
     .web-footer {
